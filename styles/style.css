@@ -6,3 +6,168 @@ Green: #00B172
 White: #FFF
 
 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: #1A1A1A;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    color: rgba(26, 26, 26, .7);
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    column-gap: 32px;
+    padding: 12px;
+}
+
+nav li:hover {
+    cursor: pointer;
+}
+
+nav img {
+    width: 10%;
+    padding: 12px;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    width:auto;
+    height: 100vh;
+    color: white;
+    background-image: url('../images/landing.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h1 {
+    font-size: 64px;
+    margin-bottom: 32px;
+}
+
+#hero p {
+    font-size: 32px;
+    text-align: center;
+    width: 50%;
+    font-weight: lighter;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section > h2 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 2rem;
+    text-decoration: underline #00B172;
+    text-underline-offset: 12px;
+}
+
+section > div {
+    display: flex;
+    flex-direction: row;
+    padding: 48px 24px;
+    justify-content: space-around;
+}
+
+section > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+section > div > div > img {
+    width: 30%;
+}
+
+section > div > div > h3 {
+    color: #00B172;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+section > div > div > p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgba(26, 26, 26, .7);
+}
+
+#app-spotify {
+    display: flex;
+    margin-left: 32px;
+    margin-right: 32px;
+    flex-direction: row;
+    background-color: #00B172;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+#app-spotify > img {
+    position: absolute;
+    width: 10%;
+    top: 50%;
+    right: 50%;
+}
+
+
+#app-spotify > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 32px 64px;
+}
+
+#app-spotify > div:nth-child(1) > h2 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+}
+
+#app-spotify > div:nth-child(1) > h3 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 1.8rem;
+}
+
+#app-spotify > div:nth-child(1) > p {
+    width: 50%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+#app-spotify > div:nth-child(2) {
+    display: flex;
+    margin-top: 64px;
+}
+
+#app-spotify > div:nth-child(2) img {
+    width: 80%;
+}
